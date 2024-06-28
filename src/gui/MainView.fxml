@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+    <content>
+        <VBox>
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Cálculos">
+                            <items>
+                                <MenuItem fx:id="MenuItemEmdia" mnemonicParsing="false" onAction="#onMenuItemCalculateAction" text="básico" />
+                        <MenuItem mnemonicParsing="false" text="científico" />
+                        <MenuItem mnemonicParsing="false" text="computacional" />
+                        <MenuItem mnemonicParsing="false" text="financeiro" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Sugestões?">
+                            <items>
+                        <MenuItem mnemonicParsing="false" text="Criar" />
+                        <MenuItem mnemonicParsing="false" text="Excluir" />
+                            </items>
+                        </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem fx:id="MenuItemAbout1" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About" />
+                     </items>
+                  </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </VBox>
+    </content>
+</ScrollPane>
